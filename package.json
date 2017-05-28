@@ -1,0 +1,23 @@
+{
+  "name": "weekend_chal_2",
+  "version": "1.0.0",
+  "description": "Allow the user to input two numbers and choose which type of  mathematica operation that you would like to perform on them. The calculations will be made in the server and sent back to the client side for viewing the results.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErinBlack/ServerSideCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErinBlack/ServerSideCalculator/issues"
+  },
+  "homepage": "https://github.com/ErinBlack/ServerSideCalculator#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
