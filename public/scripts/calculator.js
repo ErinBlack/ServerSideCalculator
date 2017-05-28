@@ -1,24 +1,28 @@
 $(document).ready(function(){
   console.log('jquery sourced');
+  var calcType;
+  $('.mathButtons').on('click', function(){
+    calcType = $(this).attr('id');
+  });
+  $('#calculate').on('click', function() {
+    //create the calculation objct to send
+    var calculation = new Object();
+    calculation.firstInput = $('#num1').val();
+    calculation.secondInput = $('#num2').val();
+    calculation.type = calcType;
+    console.log('calculation object is', calculation);
 
-  $('#calculate').on('click', calculation );
-  // {
-  //   $.ajax({
-  //     type: 'POST',
-  //     url: '/calculation'
-  //   });//end ajax call
-  // });//end onClick
+    $.ajax({
+      type: 'POST',
+      url: '/calculation',
+      data: calculation,
+      success: function(response){
+
+      }
+    });//end ajax call
+  });//end onClick
 
 });//end document.ready
 
 
 //calcuation object function
-function calculation (){
-  var calculation = new Object();
-  calculation.firstInput = $('#num1').val();
-  calculation.secondInput = $('#num2').val();
-  calculation.calcType = $('.mathButtons').attr('value');
-
-  console.log('calculation object is', calculation);
-
-}
