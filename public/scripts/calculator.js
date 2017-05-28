@@ -17,7 +17,8 @@ $(document).ready(function(){
       url: '/calculation',
       data: calculation,
       success: function(response){
-
+        console.log('the response: ',response);
+        $('.mathResult').append('<p> The answer is: ' + response.answer + '</p>');
       }
     });//end ajax call
   });//end onClick

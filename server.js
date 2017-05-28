@@ -52,7 +52,8 @@ console.log('post hit to /calculation and sent: ', req.body);
 
   var result = new Object();
   result.answer = calc;
+
   //send the result
-  res.send('' + result + '');
+  res.send(result);
 
 }); //end app.post
