@@ -5,26 +5,39 @@
     <title>Server Side Calculator</title>
     <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scripts/calculator.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700|Slabo+27px" rel="stylesheet">
   </head>
   <body>
-    <div id="inputs">
-        <h2>First Number</h2>
-        <input type="text" id="num1" placeholder="Number 1">
-        <h2>Second Number</h2>
-        <input type="text" id="num2" placeholder="Number 2">
-    </div>
-    <div id="calcButtons">
-      <button type="button" class = "mathButtons" id="add" >+</button>
-      <button type="button" class = "mathButtons" id="subtract">-</button>
-      <button type="button" class = "mathButtons" id="multiply">*</button>
-      <button type="button" class = "mathButtons" id="divide">/</button>
-    </div>
-    <div id="submitButtons">
-      <button type="button" name="button" id="calculate">Do the Math</button>
-      <button type="button" name="button" id="clear">Clear</button>
-    </div>
-    <div class="mathResult">
+    <header>
+      <h1>Server Side Calculator</h1>
+    </header>
+    <div class="wrapper">
 
-    </div>
+        <div id="inputs">
+            <div class="numberInputs" id="firstNumber">
+              <h2>First Number</h2>
+              <input type="text" class="numBoxes" id="num1" placeholder="Number 1">
+            </div>
+            <div class="numberInputs" id="secondNumber">
+              <h2>Second Number</h2>
+              <input type="text" id="num2" class="numBoxes" placeholder="Number 2">
+            </div>
+        </div>
+        <div id="calcButtons">
+          <button type="button" class = "mathButtons" id="add" >+</button>
+          <button type="button" class = "mathButtons" id="subtract">-</button>
+          <button type="button" class = "mathButtons" id="multiply">*</button>
+          <button type="button" class = "mathButtons" id="divide">/</button>
+        </div>
+        <div id="submitButtons">
+          <button type="button" name="button" id="calculate">Do the Math</button>
+          <button type="button" name="button" id="clear">Clear</button>
+        </div>
+        <div class="mathResult">
+
+        </div>
+
+      </div>
   </body>
 </html>
